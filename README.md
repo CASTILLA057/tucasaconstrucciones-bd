@@ -28,7 +28,7 @@ data/         Excel de la carga complementaria y los CSV de las filas agregadas
 
 | Archivo | Para qué sirve |
 |---|---|
-| `docs/Entregable-TuCasaConstrucciones-COMPLETO-v1.2.pdf` | Documento completo (requisitos, modelo, diccionario, DDL/DML, UAT, despliegue, Anexo 1) |
+| `docs/Entregable-TuCasaConstrucciones-v1.2.pdf` | Documento completo (requisitos, modelo, diccionario, DDL/DML, UAT, despliegue, Anexo 1) |
 | `sql/esquema_copia.sql` | DDL: 29 tablas, 5 funciones y 5 triggers |
 | `sql/datos_completos.sql` | DML: respaldo de datos de las 29 tablas (7.053 `INSERT`) |
 | `sql/completar_datos.sql` | Carga complementaria del 09/11/2026 (ítems, aplicaciones de pago, inmuebles y cuentas bancarias) |
