@@ -33,14 +33,14 @@ data/         Excel de la carga complementaria y los CSV de las filas agregadas
 | `sql/datos_completos.sql` | DML: respaldo de datos de las 29 tablas (7.053 `INSERT`) |
 | `sql/completar_datos.sql` | Carga complementaria del 09/11/2026 (ítems, aplicaciones de pago, inmuebles y cuentas bancarias) |
 | `sql/uat_copia.sql` | Plan de pruebas UAT ejecutable |
-| `sql/uat_recuperacion_local.sh` | Pruebas de recuperación REC-01 (backup y restauración) y REC-02 (caída del servidor) en un PostgreSQL 17 local con Docker |
+| `sql/uat_recuperacion.sql` | Pruebas de recuperación en Supabase: REC-01 (respaldo y restauración) y REC-02 (caída de la conexión en una transacción) |
 | `sql/ejercicios_multitabla.sql` | Ejercicios de `JOIN` y agregados |
 | `data/datos_complementarios_2026-11-09.xlsx` | Excel con las 4 hojas de la carga complementaria |
 | `data/*.csv` | Las mismas filas en CSV |
 
 ## Cómo recrear la base
 
-1. Crear una base PostgreSQL vacía (Supabase o local). `profiles.id` referencia `auth.users(id)` y la columna `created_by` usa `auth.uid()`, que existen en Supabase; en un Postgres local hay que crear antes un esquema `auth` mínimo (ver el inicio de `sql/uat_recuperacion_local.sh`) y, después de cargar los datos, insertar en `auth.users` los `id` de `profiles`.
+1. Crear un proyecto de Supabase vacío (PostgreSQL 17). `profiles.id` referencia `auth.users(id)` y la columna `created_by` usa `auth.uid()`, que ya existen en Supabase.
 2. Ejecutar `sql/esquema_copia.sql`.
 3. Ejecutar `sql/datos_completos.sql`. El script activa `session_replication_role = replica` para que el trigger `trg_apply_sale_payment_fifo` no duplique `payment_applications` ni se validen las llaves foráneas durante la carga, y lo restablece al final.
 4. Verificar los conteos:
@@ -59,4 +59,4 @@ Ejecutar `sql/uat_copia.sql` en el SQL Editor o en pgAdmin 4. La parte A escribe
 
 ## Verificación del respaldo
 
-`datos_completos.sql` se probó el 09/11/2026 en un PostgreSQL 17.11 local (Docker): con `esquema_copia.sql` y este respaldo quedan las 29 tablas con 7.053 filas, los mismos conteos que la base desplegada, 5 triggers y 52 llaves foráneas. Un respaldo con `pg_dump` se restauró sin pérdida tras eliminar la base (`sql/uat_recuperacion_local.sh`).
+`sql/datos_completos.sql` es el respaldo (`pg_dump` desde pgAdmin 4) de la base desplegada: 7.053 sentencias `INSERT` y los mismos conteos por tabla que la base de Supabase. La restauración desde un respaldo se probó en la propia base de Supabase con `sql/uat_recuperacion.sql` (sección 5 del documento).
