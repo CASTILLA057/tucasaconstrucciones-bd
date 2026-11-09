@@ -1,0 +1,21 @@
+"id","user_id","titular","user_type","banco","account_type","account_number","is_primary"
+"a3e6e9d4-1ab7-43af-8c65-6d0117e5f0fd","f6bd0bc6-8847-4fd5-a8fd-20e90a2b517e","Andrés Rojas","provider","Bancolombia","digital_wallet","7007147485",True
+"0b52758f-fbc7-4694-b561-3c13429b3001","627e46eb-4e50-4a43-bcfe-262d81b21bfc","Camila Ramírez","provider","Bancoomeva","checking","7023516865",True
+"25a20a4f-4550-408a-a12e-c06604b5f77b","8f0193bc-8eed-45c6-9c97-42134e04066e","Carlos Sánchez","provider","Daviplata","checking","7085904984",True
+"2d42add3-adbb-471e-8ad1-59e5f9a8f60c","646094aa-f4ed-429e-bab2-5397d51770f9","Daniela Moreno","provider","Daviplata","checking","7093083793",True
+"6fe6f7f8-88ea-47ce-8086-59046c85816d","63ca94fa-6970-4b91-956a-1310d0f54b60","Diego Torres","provider","Bancoomeva","savings","7010951410",True
+"64eff078-7963-4156-8cd4-86a60cd783dd","f921940e-2b2f-4415-8cac-b396e2231812","Felipe García","provider","Banco de Occidente","digital_wallet","7023105680",True
+"9b10baaa-1a03-4d6c-87e3-4487c8ca07dd","64ab9932-027f-4269-835d-be9d4ceba11e","Isabella Herrera","provider","Banco Falabella","savings","7063084310",True
+"fcc5f93f-3645-448c-903a-43af92fcec68","9dde52b7-06f6-47e4-a879-296213c4b1f7","Jorge Herrera","provider","Scotiabank Colpatria","checking","7002677132",True
+"3a1ba617-6868-46d1-86df-8896cfb94c74","378e5bf7-9d35-4505-ad48-23af3960318a","Juan Ruiz","provider","Nequi","checking","7075731952",True
+"d65ddc2b-f788-42e9-ac41-30f5396f3765","a8ec76a4-fb75-47cb-9499-bb73646daf8e","Julián Suárez","provider","Banco de Occidente","checking","7006235405",True
+"64feb01b-5dec-491e-bb79-1f192d28f836","219510c1-8b35-4bc1-b2b7-e64299070690","Laura Ortiz","provider","Banco AV Villas","digital_wallet","7028078892",True
+"ddcbfbcb-9542-4e24-b2bc-540f6bde0a02","0cee34eb-aec1-4c6f-affd-05031f4545ba","Luis Martínez","provider","Nequi","digital_wallet","7081495282",True
+"199977ad-f8a1-4531-bc10-ea664a026fce","c5eff1be-2fca-47c8-adc2-c2a19b54e99c","María Díaz","provider","Bancoomeva","savings","7095224386",True
+"04995750-b2c1-4a84-b13f-05434dc17f4f","25366318-6228-4e11-b723-08ff266e9073","Mariana López","provider","Bancoomeva","savings","7029959473",True
+"8620c395-9465-4a64-a17c-dfd014fa62bb","31c73c15-c5ee-4914-923b-4359b4c08ef8","Mateo Moreno","provider","Banco de Bogotá","digital_wallet","7056882788",True
+"94ce6704-2952-41eb-836f-5ec2521102fa","81df4e86-2b31-4fa7-81c4-71f0209361d9","Natalia Suárez","provider","Banco AV Villas","savings","7019681817",True
+"42b428d6-87d2-4eea-a540-02a466acc9e2","ca22d174-9262-46c4-b72e-2af1217ed8c7","Paola Rodríguez","provider","Bancoomeva","digital_wallet","7027519587",True
+"f9c6089d-157a-4b81-9325-b72d9cd9777c","ae0243bf-7c28-4a3f-9cd0-fd2c0efefa1e","Sergio Vargas","provider","Banco AV Villas","digital_wallet","7023813169",True
+"68c64623-3918-4273-bb8f-d2601cbe8418","74a2beb1-1952-46d0-92c3-bcbfab2f22ae","Sofía Vargas","provider","Banco de Bogotá","digital_wallet","7034230074",True
+"6a763dd8-5462-4306-8238-2eb35370e66a","d5e1df4d-5fd3-421d-b55c-241bb4d7b9b0","Valentina Pérez","provider","Daviplata","savings","7067241953",True
